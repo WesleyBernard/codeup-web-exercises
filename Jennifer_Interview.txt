@@ -1,0 +1,15 @@
+1 What draws you to coding and web development as a career?.
+ Always worked customer service, most recently worked dental and was most interested when she had an opportunity to work 
+computers and solving issues on the computer and after doing research into that discovered an interest in coding.
+2 What are your greatest strengths? Weaknesses?.
+Strengths- Asks a lot of questions, detail oriented
+Weaknesses- Can feel intimidated if she fears she may be the only one to not understand something
+3 How has your background helped prepare you for web development (technical and non-technical)?.
+ Used to working at a fast pace and therefore used to learning quickly, being hands on, and learning while doing.
+4 Describe your dream job in web development.
+ Wants to work for a tech company that treats their employees well.
+5 What technologies interest you, web development/coding-related, and otherwise?
+ Has experience in CSS and HTML and finds both really interesting, but wants to learn more about java and javascript have a more
+ complete understanding of coding languages as a whole.  Learned CSS and HTML through internet resources.
+6 What online resources do you use to to get the latest info/news on technology? 
+Google news
