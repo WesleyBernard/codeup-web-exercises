@@ -29,3 +29,10 @@
 // ++ - increment
 // -- - decrement
 
+// All of these are falsey
+// nan
+// null
+// undefined
+// 0 and -0
+// ""
+

@@ -58,5 +58,27 @@ var facebook = 350 * 10;
 
 console.log(google + amazon + facebook);
 
+var course = "space"
 
+var conflict = "yes"
+
+console.log(course !== "full" && conflict == "No");
+
+sales = "1"
+
+var premium = "no"
+
+console.log(parseInt(sales) > 2 || premium == "yes");
+
+var username = "codeup";
+
+var password = "notastrongpassword";
+
+console.log(password.length >= 5);
+
+console.log(!password.includes(username));
+
+console.log(username.length <= 20);
+
+console.log(username == username.trim() && password == password.trim());
 
