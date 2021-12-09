@@ -52,6 +52,11 @@ var herc = 1
 
 console.log((3 + 5 + 1) * 3);
 
+var google = 400 * 6;
+var amazon = 380 * 4;
+var facebook = 350 * 10;
+
+console.log(google + amazon + facebook);
 
 
 
