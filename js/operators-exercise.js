@@ -1,6 +1,38 @@
-var sample = "Hello Codeup"
-console.log(sample);
-    // I'm smooth brained and didn't finish this, but I will I swear
-console.log(sample.indexOf());
+console.log('1' + 2);
 
-//now I'm having trouple with c logging oh gosh oh heck
+console.log(typeof '1' + 2);
+
+console.log(6 % 4);
+
+console.log('3 + 4 is ' + parseInt(3 + 4));
+// how could you make this produce the correct output?
+
+console.log(0 < 0);
+
+console.log('false' == false);
+
+console.log(true == 'true');
+
+console.log(5 >= -5);
+
+console.log(!false || false);
+
+console.log(true || "42");
+
+console.log(!true && !false);
+
+console.log(6 % 5);
+
+console.log(5 < 4 && 1 === 1);
+
+console.log(5 < 4 && 1 === 1);
+
+console.log(typeof 'codeup' === 'string');
+
+console.log('codeup' === 'codeup' && 'codeup' === 'Codeup');
+
+console.log(4 >= 0 && 1 !== '1');
+
+console.log(6 % 3 === 0);
+
+console.log(5 % 2 !== 0);
