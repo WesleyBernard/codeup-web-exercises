@@ -31,3 +31,4 @@ function applyDiscount(x , y) {
 }
 
 console.log(applyDiscount(100 , 0.10));
+
