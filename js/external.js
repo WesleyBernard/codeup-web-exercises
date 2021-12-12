@@ -4,11 +4,11 @@ var mermaid = prompt("How many days have you had the lil mermaid?");
 var bear = prompt("How many days have you had brother bear?");
 var herc = prompt("how many days have you had hercules?");
 
-let total = parseInt(mermaid) + parseInt(bear) + parseInt(herc);
+let total = ((parseInt(mermaid) + parseInt(bear) + parseInt(herc)) * 3);
 
 console.log(total);
 
-alert("You owe " + (parseInt(total) * 3))
+alert("You owe $" + total);
 
 let google =  prompt("How many hours did you work for google?");
 let amazon = prompt("How many hours did you work for amazon");
