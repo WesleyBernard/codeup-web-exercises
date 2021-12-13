@@ -20,6 +20,7 @@
 //
 // console.log(analyzeColor(randomColor));
 
+
 // let color = prompt("What is your favorite color?");
 //
 // switch(color) {
@@ -32,7 +33,7 @@
 //     default:
 //         alert("I dunno much about that color");
 // }
-//
+
 
 // function calculateTotal(x,y) {
 //     if (x === 0) {
@@ -82,4 +83,28 @@
 //
 // alert("UwU");
 
-let want = confirm("Would you like to enter a number?");
+// let want = confirm("Would you like to enter a number?");
+//
+// if (want) {
+//     let num = parseFloat(prompt("Enter a number"));
+//     if (num % 2 === 0) {
+//         alert(num + " is an even number");
+//     } else {
+//         alert(num + " is an odd number");
+//     }
+//     alert("That number plus 100 is " + (num+100));
+//
+//     if (Math.sign(num) === +1) {
+//         alert(num + " is a positive number");
+//     }
+//     else if (Math.sign(num) === -1) {
+//         alert(num + " is a negative number");
+//     }
+//     else if (Math.sign(num) === +0) {
+//         alert("You entered 0");
+//     }
+//     else if (Math.sign(num) === -0) {
+//         alert("You entered -0");
+//     }
+// }
+
