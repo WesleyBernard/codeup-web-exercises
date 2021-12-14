@@ -14,7 +14,8 @@
 // console.log(isFive("5"));
 
 function isMultipleOfThree(x) {
-    return x % 3 === 0;
+    return x % 3 === 0; // 9/3 =3 /0
 }
 
-console.log(isMultipleOfThree(301));
+console.log(isMultipleOfThree(9));
+

@@ -107,4 +107,23 @@
 //         alert("You entered -0");
 //     }
 // }
+// Create a file named conditionals.js inside the js directory.
+//     Create a function called analyzeColor1 that takes a parameter called color
+// In your function, use ONLY if statements to print the following:
+//     “blue is the color of the sky” if the value of color is “blue”
+// “red is the color of love” if the value of color is “red”
+// “green is the color of envy” if the value of color is “green”
+// “I don’t know that color” if the value of color is anything else
+// HINT: use return in the conditional code blocks to prevent from printing multiple times for the same argument
 
+function analyzeColor1(color) {
+    if (color === "red") {
+    return "red is the color of love";
+    } if (color === "blue") {
+        return "blue is the color of the sky";
+    } if (color === "green") {
+        return "green is the color of envy";
+    } return "I don't know much about that color";
+}
+
+console.log(analyzeColor1("yellow"));
