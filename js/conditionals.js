@@ -196,5 +196,20 @@ function evenOrOdd(input) {
 
 evenOrOdd(input);
 
+function relativeToZero(input) {
+    if (isNaN(parseFloat(input))) {
+        console.log("Strings have no relevance to 0");
+    }else if (parseFloat(input) < 0) {
+        console.log(input + " is less than 0");
+    }else if (parseFloat(input) > 0) {
+        console.log(input + " is greater than 0");
+    }else if (parseFloat(input) === 0) {
+        console.log(input + " is 0");
+    }else {
+        console.log("Whoops, you didn't plan for this if you're seeing this OwO");
+    }
+}
+
 // console.log(isNaN())
 
+relativeToZero(input);
