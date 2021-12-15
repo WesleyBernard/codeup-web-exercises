@@ -26,7 +26,7 @@ function countTest(input) {
 
     //testing for response to non-string
 
-    if (typeof input == 'string') {
+    if (typeof input === 'string') {
         console.log("Poggers, we got a string");
     } else {
         console.log("I don't think that was a string, my guy");
@@ -38,5 +38,5 @@ countTest("UwU");
 countTest(27);
 countTest(null);
 countTest(undefined);
-countTest();
+countTest(true);
 
