@@ -36,3 +36,6 @@
 // 0 and -0
 // ""
 
+console.log(NaN === NaN);
+
+console.log(isNaN("UwU"));
