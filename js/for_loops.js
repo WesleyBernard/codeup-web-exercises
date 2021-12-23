@@ -50,5 +50,22 @@
 //     }
 // }
 
+//stole the below example from my soft engeineer friend
+
+//Empty string to be appended to print on a single line.
+var s = "";
+//First for loop going 1 to 9
+for (let i = 1; i < 10; i++){
+    //Inner loop starting at i and decrementing to 0
+    //This means i=1 will run once, i=2 will run twice, etc.
+    for (let j = i; j > 0; j--){
+        //Append our current outer loop iteration to the empty string.
+        s += i
+    }
+    //Log the entire completed string
+    console.log(s)
+    //Reset the string for next iteration
+    s = "";
+}
 
 
