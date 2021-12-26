@@ -3,42 +3,66 @@
 // Functions using conditionals but not loops or arrays:
 //
 //     - Make a function named `isOdd(number)`
-function isOdd(number) {
-    return number % 2 === 1;
-}
+// function isOdd(number) {
+//     return number % 2 === 1;
+// }
 
-console.log(isOdd(1));
+// console.log(isOdd(1));
 
 // - Make a function named `isEven(number)`
-function isEven(number) {
-    return number % 2 === 0;
-}
+// function isEven(number) {
+//     return number % 2 === 0;
+// }
 
-console.log(isEven(1));
+// console.log(isEven(1));
 
 // - Make a function named `identity(input)` that returns the input exactly as
 // provided.
 
-function identify(input) {
-    return input
-}
+// function identify(input) {
+//     return input
+// }
 
-console.log(identify("UwU"));
+// console.log(identify("UwU"));
 
 // - Make a function named `isFive(input)`
 
-function isFive(input) {
-    return input === 5;
-}
+// function isFive(input) {
+//     return input === 5;
+// }
 
-console.log(isFive(27));
+// console.log(isFive(27));
 
 // - Make a function named `addFive(input)` that adds five to some input.
 
+// function addFive(num) {
+//     return num + 5;
+// }
+
+// console.log(addFive(27));
 
 
 // - Make a function named `isMultipleOfFive(input)`
+
+// function isMultipleOfFive(num) {
+//     if(num % 5 === 0) {
+//         return true;
+//     }else {
+//         return false;
+//     }
+    
+// }
+
+// console.log(isMultipleOfFive(28));
+
 // - Make a function named `isThree(input)`
+
+// function isThree(num) {
+//     return num === 3;
+// }
+
+// console.log(isThree(3));
+
 // - Make a function named `isMultipleOfThree(input)`
 // - Make a function named `isMultipleOfThreeAndFive(input)`
 // - Make a function named `isMultipleOf(target, n)` which checks if target is
