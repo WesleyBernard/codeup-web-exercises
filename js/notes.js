@@ -66,7 +66,7 @@
 //     for(i = 0; i < num; i++) {
 //         if (i % 2 !== 0) {
 //             console.log(i + " is an odd number.");
-//         } else if (i % 2 === 0) {
+//         } else{
 //             console.log(i + " is an even number.");
 //         }
 //     }
@@ -81,22 +81,22 @@
 //      -> Once the user enters the correct password, use the 'break' keyword to end the loop
 //      -> After the loop concludes, alert the use they have entered the correct password
 
-var answer = "helloworld"
-function getPassword() {
-    for(let i = 0; i < 3; i++) {
-        let password = prompt("Please enter the password");
-        if (password === answer) {
-            alert("correct password");
-            break;
-        }else if(i === 1) {
-            alert("You only have one mnore attempt");
-        } else if (i === 2) {
-            alert("Too many incorrect attemmpts, see ya.");
-        }
-    }
-}
-
-getPassword();
+// var answer = "helloworld"
+// function getPassword() {
+//     for(let i = 0; i < 3; i++) {
+//         let password = prompt("Please enter the password");
+//         if (password === answer) {
+//             alert("correct password");
+//             break;
+//         }else if(i === 1) {
+//             alert("You only have one mnore attempt");
+//         } else if (i === 2) {
+//             alert("Too many incorrect attemmpts, see ya.");
+//         }
+//     }
+// }
+//
+// getPassword();
 
 // console.log(isNaN("UwU"));
 //
@@ -117,4 +117,21 @@ getPassword();
 // }
 //
 // console.log(roll("4d6"));
+
+// Mini Exercise
+// -Create an array with five strings representing your favorite artists (music or otherwise) and store it in a
+// variable called favoriteArtists
+// -Write a function that accepts an array as a parameter and...
+// -> logs the first, third, and last elements of that array
+// -Invoke your function and pass favoriteArtists as an argument
+
+let favArtists = ["Rona", "NF", "Eminem", "Lua"]
+
+function firstThirdLast(array) {
+    console.log(array[0]);
+    console.log(array[2]);
+    console.log(array[array.length-1]);
+}
+
+firstThirdLast(favArtists);
 
