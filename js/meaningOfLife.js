@@ -21,9 +21,9 @@ function getMeaningOfLife(meaningfulNum) {
         counter++
     }
     console.log("The meaning of life, the universe, and everything is " + meaningfulNum + "!");
-    if (meaningfulNum == 42) {
+    if (meaningfulNum === 42) {
         console.log("Did you bring your towel?");
     }
 }
 
-getMeaningOfLife(undefined);
+getMeaningOfLife(-17);
