@@ -36,6 +36,25 @@
 // 0 and -0
 // ""
 
-console.log(NaN === NaN);
+// console.log(NaN === NaN);
 
-console.log(isNaN("UwU"));
+// console.log(isNaN("UwU"));
+
+function roll(rolled) {
+    const [timesToRoll, sizeOfDice] = rolled.split('d');
+    const rolledArray = [];
+    let rollTotal = 0;
+    for (let i = 0; i < timesToRoll; i++) {
+        const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
+        rolledArray.push(diceRoll);
+        rollTotal += diceRoll;
+    }
+
+    return {
+        roll: rolledArray,
+        total: rollTotal,
+    };
+}
+
+console.log(roll("4d6"));
+
