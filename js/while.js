@@ -20,6 +20,10 @@ do {
     allCones -= conesSold;
     
     console.log("We just sold " + conesSold + " cones!");
+    if (allCones === 0) {
+        console.log("cool, we can head home");
+        return;
+    }
     console.log("only " + allCones + " left to go!");    
     
 

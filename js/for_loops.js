@@ -9,6 +9,9 @@
 // showMultiplicationTable(7);
 
 
+
+
+
 // function tenRandomNumbers() {
 //     for (let i = 0; i < 10; i++) {
 //        let x = (Math.floor(Math.random(20) * 200));
@@ -50,17 +53,22 @@
 //     }
 // }
 
+
 //stole the below example from my soft engeineer friend
 
 //Empty string to be appended to print on a single line.
 var s = "";
 //First for loop going 1 to 9
 for (let i = 1; i < 10; i++){
+    // console.log("this is i " + i)
     //Inner loop starting at i and decrementing to 0
     //This means i=1 will run once, i=2 will run twice, etc.
     for (let j = i; j > 0; j--){
+
         //Append our current outer loop iteration to the empty string.
         s += i
+        // console.log("this is j " + j )
+        // console.log("this is s " + s)
     }
     //Log the entire completed string
     console.log(s)

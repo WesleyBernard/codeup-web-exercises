@@ -37,6 +37,7 @@
 // ""
 
 // console.log(NaN === NaN);
+<<<<<<< HEAD
 //
 // console.log(isNaN("UwU"));
 
@@ -96,3 +97,26 @@ function getPassword() {
 }
 
 getPassword();
+=======
+
+// console.log(isNaN("UwU"));
+
+function roll(rolled) {
+    const [timesToRoll, sizeOfDice] = rolled.split('d');
+    const rolledArray = [];
+    let rollTotal = 0;
+    for (let i = 0; i < timesToRoll; i++) {
+        const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
+        rolledArray.push(diceRoll);
+        rollTotal += diceRoll;
+    }
+
+    return {
+        roll: rolledArray,
+        total: rollTotal,
+    };
+}
+
+console.log(roll("4d6"));
+
+>>>>>>> 76f7eac31b2a4bb7f42124270e40e2de11ce836e
