@@ -125,13 +125,15 @@
 // -> logs the first, third, and last elements of that array
 // -Invoke your function and pass favoriteArtists as an argument
 
-let favArtists = ["Rona", "NF", "Eminem", "Lua"]
+// let favArtists = ["Rona", "NF", "Eminem", "Lua"]
+//
+// function firstThirdLast(array) {
+//     console.log(array[0]);
+//     console.log(array[2]);
+//     console.log(array[array.length-1]);
+// }
+//
+// firstThirdLast(favArtists);
 
-function firstThirdLast(array) {
-    console.log(array[0]);
-    console.log(array[2]);
-    console.log(array[array.length-1]);
-}
-
-firstThirdLast(favArtists);
+// let numbers = [2000, 1000, 20, 56, 42]
 
