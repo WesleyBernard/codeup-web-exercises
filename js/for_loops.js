@@ -77,3 +77,6 @@ for (let i = 1; i < 10; i++){
 }
 
 
+let str = ""
+console.log("UwU" + 1 + 1);
+

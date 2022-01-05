@@ -1,13 +1,19 @@
 "use strict";
-
-// for (var i = 0; i < 100; i++) {
-//     console.log(i);
-//     if(i === 27) {
-//         console.log("We're hoppin off this ride, king");
-//         break;
-//     }   
-// }
-
+do{
+    var numToSkip = prompt("PLease enter a number between 1 and 50");
+    if (parseInt(numToSkip) > 1 && parseInt(numToSkip) < 50){
+        break;
+    }
+} while (parseInt(numToSkip) <= 1 || parseInt(numToSkip) >= 50);
+for (let i = 0; i < 50; i++) {
+    if (i === parseInt(numToSkip)) {
+        console.log("yikes skipping number: " + i);
+        continue;
+    }
+    if (i % 2 !== 0){
+    console.log(`here is an odd number ${i}`)
+    }
+}
 //these below codes I wrote while helpin someone study so ignore them, I may take them out.
 //****************************************************************************************** */
 

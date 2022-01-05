@@ -137,3 +137,10 @@
 
 // let numbers = [2000, 1000, 20, 56, 42]
 
+// function mirrorNum() {
+//     for (var i = 1; i < 10; i++) {
+//         console.log(i.toString().repeat(i))
+//     }
+// }
+
+// mirrorNum();
