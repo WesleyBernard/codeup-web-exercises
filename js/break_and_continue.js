@@ -1,10 +1,10 @@
 "use strict";
 do{
-    var numToSkip = prompt("PLease enter a number between 1 and 50");
-    if (parseInt(numToSkip) > 1 && parseInt(numToSkip) < 50){
+    var numToSkip = parseInt(prompt("PLease enter a number between 1 and 50"));
+    if ((numToSkip) > 1 && (numToSkip) < 50){
         break;
     }
-} while ((parseInt(numToSkip) <= 1 || parseInt(numToSkip) >= 50) || isNaN(parseInt(numToSkip)) === true)
+} while (((numToSkip) <= 1 || (numToSkip) >= 50) || numToSkip)
 for (let i = 0; i < 50; i++) {
     if (i === parseInt(numToSkip)) {
         console.log("yikes skipping number: " + i);
