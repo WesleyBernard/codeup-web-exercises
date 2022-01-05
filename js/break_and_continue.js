@@ -4,7 +4,7 @@ do{
     if (parseInt(numToSkip) > 1 && parseInt(numToSkip) < 50){
         break;
     }
-} while (parseInt(numToSkip) <= 1 || parseInt(numToSkip) >= 50);
+} while ((parseInt(numToSkip) <= 1 || parseInt(numToSkip) >= 50) || isNaN(parseInt(numToSkip)) === true)
 for (let i = 0; i < 50; i++) {
     if (i === parseInt(numToSkip)) {
         console.log("yikes skipping number: " + i);
@@ -14,6 +14,8 @@ for (let i = 0; i < 50; i++) {
     console.log(`here is an odd number ${i}`)
     }
 }
+// console.log(isNaN("UwU") === true)
+
 //these below codes I wrote while helpin someone study so ignore them, I may take them out.
 //****************************************************************************************** */
 
