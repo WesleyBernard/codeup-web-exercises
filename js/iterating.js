@@ -69,9 +69,9 @@ function lastIndex(array) {
     console.log(array[array.length - 1]);
 }
 
-console.log(index0(names));
-console.log(index1(names));
-console.log(lastIndex(names));
+index0(names);
+index1(names);
+lastIndex(names);
 
 
     /**
