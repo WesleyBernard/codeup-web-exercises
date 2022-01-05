@@ -26,19 +26,20 @@
      * string, and <li> tags around each planet.
      */
 
-    let brPlanets = ("Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune")
-
-    console.log(brPlanets);
+    let brPLanets =("Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune")
+    console.log(brPLanets)
+    // document.querySelector("body").insertAdjacentHTML("afterbegin", brPLanets);
+    
 
     // <ul> 
-    //     <li>"Mercury"</li> 
-    //     <li>"Venus"</li>
-    //     <li>"Earth"</li>
-    //     <li>"Mars"</li>
-    //     <li>"Jupiter"</li>
-    //     <li>"Saturn"</li>
-    //     <li>"Uranus"</li>
-    //     <li>"Neptune</li>
+    //     <li>Mercury</li> 
+    //     <li>Venus</li>
+    //     <li>Earth</li>
+    //     <li>Mars</li>
+    //     <li>Jupiter</li>
+    //     <li>Saturn</li>
+    //     <li>Uranus</li>
+    //     <li>Neptune</li>
     // </ul>
 
 })();
