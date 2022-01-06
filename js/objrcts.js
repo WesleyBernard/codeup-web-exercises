@@ -56,7 +56,7 @@
     // function discountChecker() {
     //
     //     shoppers.forEach(function (shopper) {
-    //         if (shopper.amount >= 200) {
+    //         if (shopper.amount > 200) {
     //             console.log(shopper.name +" You get a 12% discount!");
     //             ;
     //             console.log("your new total is " + (shopper.amount - shopper.amount * .12));
