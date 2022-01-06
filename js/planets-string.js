@@ -26,7 +26,7 @@
      * string, and <li> tags around each planet.
      */
 
-    let brPLanets =("Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune")
+    let brPLanets = planetsArray.join("<br>");
     console.log(brPLanets)
     // document.querySelector("body").insertAdjacentHTML("afterbegin", brPLanets);
     
