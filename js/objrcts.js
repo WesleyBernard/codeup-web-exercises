@@ -186,8 +186,9 @@
     function  createBook(titleName, authorFirstName, authorLastName) {
         books[books.length] = {
             title : titleName,
-            author : {authorFirstName,
-                firstName: authorLastName
+            author : {
+                firstName: authorFirstName,
+                lastName : authorLastName
             }
         }
 
