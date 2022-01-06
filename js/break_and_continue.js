@@ -4,7 +4,7 @@ do{
     if ((numToSkip) > 1 && (numToSkip) < 50){
         break;
     }
-} while (((numToSkip) <= 1 || (numToSkip) >= 50) || numToSkip)
+} while (((numToSkip) <= 1 || (numToSkip) >= 50) || !numToSkip)
 for (let i = 0; i < 50; i++) {
     if (i === parseInt(numToSkip)) {
         console.log("yikes skipping number: " + i);
