@@ -184,20 +184,24 @@
      */
 
     function  createBook(titleName, authorFirstName, authorLastName) {
-        books[books.length] = {
+        let book = {
             title : titleName,
             author : {
-                firstName: authorFirstName,
+                firstName : authorFirstName,
                 lastName : authorLastName
             }
         }
+        
+        books.push(book);
 
     }
 
     createBook("One more book", "Jack", "Jackson");
 
     console.log(books);
+
     console.log("\n Okay but what if we added just one more book? For good measure. \n")
+
     createBook("Okay last one for real", "Lucy", "Bell");
 
     console.log(books);

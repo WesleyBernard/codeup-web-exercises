@@ -100,23 +100,23 @@
 
 // console.log(isNaN("UwU"));
 //
-// function roll(rolled) {
-//     const [timesToRoll, sizeOfDice] = rolled.split('d');
-//     const rolledArray = [];
-//     let rollTotal = 0;
-//     for (let i = 0; i < timesToRoll; i++) {
-//         const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
-//         rolledArray.push(diceRoll);
-//         rollTotal += diceRoll;
-//     }
-//
-//     return {
-//         roll: rolledArray,
-//         total: rollTotal,
-//     };
-// }
-//
-// console.log(roll("4d6"));
+function roll(rolled) {
+    const [timesToRoll, sizeOfDice] = rolled.split('d');
+    const rolledArray = [];
+    let rollTotal = 0;
+    for (let i = 0; i < timesToRoll; i++) {
+        const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
+        rolledArray.push(diceRoll);
+        rollTotal += diceRoll;
+    }
+
+    return {
+        roll: rolledArray,
+        total: rollTotal,
+    };
+}
+
+console.log(roll("10d20"));
 
 // Mini Exercise
 // -Create an array with five strings representing your favorite artists (music or otherwise) and store it in a
@@ -160,33 +160,33 @@
 //     write a printMovies function that takes an array as a parameter,
 //     iterates over the array, and calls printMovie on each of the array elements (edited)
 
-let movies = [];
+// let movies = [];
 
-movies[0] = {
-    year : 1996,
-    genre : ["fantasy", "action", "sci-fi"],
-    myRating : 15,
-    rate : function(rating) {
-        this.myRating = rating;
-    },
-    directors : {
-        name : "Ashley",
-        age : 47,
-        opinon : "meh"
-    }
+// movies[0] = {
+//     year : 1996,
+//     genre : ["fantasy", "action", "sci-fi"],
+//     myRating : 15,
+//     rate : function(rating) {
+//         this.myRating = rating;
+//     },
+//     directors : {
+//         name : "Ashley",
+//         age : 47,
+//         opinon : "meh"
+//     }
 
-}
+// }
 
 
-movies[1] = {
-    year: 2017,
-    genre: ["horror", "fantasy"],
-    myRating : 277,
-    rate : function(rating) {
-        this.myRating = rating;
-    }
+// movies[1] = {
+//     year: 2017,
+//     genre: ["horror", "fantasy"],
+//     myRating : 277,
+//     rate : function(rating) {
+//         this.myRating = rating;
+//     }
 
-}
+// }
 
 // function printMovies(movie) {
 //     console.log(movie)
@@ -195,18 +195,18 @@ movies[1] = {
 // printMovies(movies[0]);
 // printMovies(movies[1]);
 
-function printMovie(movie) {
-    console.log(movie);
-}
+// function printMovie(movie) {
+//     console.log(movie);
+// }
 
-function printMovies(movies) {
+// function printMovies(movies) {
 
-    movies.forEach(function (movie) {
-        printMovie(movie);
-    })
-}
+//     movies.forEach(function (movie) {
+//         printMovie(movie);
+//     })
+// }
 
-printMovies(movies);
+// printMovies(movies);
 // movies[0].myRating(15)
 
 // ** Continuing MINI EXERCISE until lunch ***
@@ -216,3 +216,12 @@ printMovies(movies);
 //     It is an array of string elements where each element
 // is one of your movies’ genres from imdb.com
 // and change your printMovie function
+
+let books = [];
+
+books[0] = {
+    title : "the title",
+    author :{
+        
+    }
+}
