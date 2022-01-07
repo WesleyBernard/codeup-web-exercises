@@ -1,3 +1,5 @@
+'use strict';
+
 //--NUMBERS (INTRO)
 //I hope it's cool for me to take my notes in here
 //anyway, expressions in js will follow order of operations just like we did in middle school, (PEMDAS)
@@ -100,23 +102,23 @@
 
 // console.log(isNaN("UwU"));
 //
-function roll(rolled) {
-    const [timesToRoll, sizeOfDice] = rolled.split('d');
-    const rolledArray = [];
-    let rollTotal = 0;
-    for (let i = 0; i < timesToRoll; i++) {
-        const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
-        rolledArray.push(diceRoll);
-        rollTotal += diceRoll;
-    }
+// function roll(rolled) {
+//     const [timesToRoll, sizeOfDice] = rolled.split('d');
+//     const rolledArray = [];
+//     let rollTotal = 0;
+//     for (let i = 0; i < timesToRoll; i++) {
+//         const diceRoll = Math.trunc(Math.random() * sizeOfDice) + 1;
+//         rolledArray.push(diceRoll);
+//         rollTotal += diceRoll;
+//     }
 
-    return {
-        roll: rolledArray,
-        total: rollTotal,
-    };
-}
+//     return {
+//         roll: rolledArray,
+//         total: rollTotal,
+//     };
+// }
 
-console.log(roll("10d20"));
+// console.log(roll("10d20"));
 
 // Mini Exercise
 // -Create an array with five strings representing your favorite artists (music or otherwise) and store it in a
@@ -217,11 +219,41 @@ console.log(roll("10d20"));
 // is one of your movies’ genres from imdb.com
 // and change your printMovie function
 
-let books = [];
+// let books = [];
 
-books[0] = {
-    title : "the title",
-    author :{
-        
-    }
-}
+// books[0] = {
+//     title : "the title",
+//     author :{
+
+//     }
+// }
+
+
+
+// this code will produce a console log every second
+// when count >= max, the interval is cancelled, and the logging will stop
+
+// var count = 0;
+// var max = 10;
+// var interval = 1000; // interval time in milliseconds
+
+// var intervalId = setInterval(function () {
+//     if (count >= max) {
+//         clearInterval(intervalId);
+//         console.log('All done');
+//     } else {
+//         count++;
+//         console.log('Repeating this line ' + count);
+//     }
+// }, interval);
+
+
+var delay = 5000; // delay time in milliseconds
+
+var timeoutId = setTimeout(function () {
+    alert('Here is a delayed hello!');
+}, delay);
+
+// to cancel the timeout, you can call
+// clearTimeout(timeoutId);
+// prior to the delay expiring
