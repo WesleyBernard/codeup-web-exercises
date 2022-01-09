@@ -13,7 +13,7 @@
 
     planetsArray = planetsString.split("|");
 
-     console.log(planetsArray);
+    // console.log(planetsArray);
 
     /**
      * TODO:
@@ -41,5 +41,13 @@
     //     <li>Uranus</li>
     //     <li>Neptune</li>
     // </ul>
+
+    let planetsNewArray = brPLanets.split("<br>")
+    console.log(planetsNewArray);
+    let coolUl = ""
+    planetsNewArray.forEach(planet => coolUl += `<li>${planet}</li>`)
+    coolUl = "<ul>" + coolUl + "</ul>"
+
+    console.log(coolUl);
 
 })();
