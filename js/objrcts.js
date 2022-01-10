@@ -136,6 +136,8 @@
             lastName :"Last"
         } ,
     }
+    console.log(books)
+
 
     // console.log(books);
 
@@ -183,27 +185,27 @@
      *   `showBookInfo` function.
      */
 
-    function  createBook(titleName, authorFirstName, authorLastName) {
-        let book = {
-            title : titleName,
-            author : {
-                firstName : authorFirstName,
-                lastName : authorLastName
-            }
-        }
+    // function  createBook(titleName, authorFirstName, authorLastName) {
+    //     let book = {
+    //         title : titleName,
+    //         author : {
+    //             firstName : authorFirstName,
+    //             lastName : authorLastName
+    //         }
+    //     }
         
-        books.push(book);
+    //     books.push(book);
 
-    }
+    // }
 
-    createBook("One more book", "Jack", "Jackson");
+    // createBook("One more book", "Jack", "Jackson");
 
-    console.log(books);
+    // console.log(books);
 
-    console.log("\n Okay but what if we added just one more book? For good measure. \n")
+    // console.log("\n Okay but what if we added just one more book? For good measure. \n")
 
-    createBook("Okay last one for real", "Lucy", "Bell");
+    // createBook("Okay last one for real", "Lucy", "Bell");
 
-    console.log(books);
+    // console.log(books);
 
 })();

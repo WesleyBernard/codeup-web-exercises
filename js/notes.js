@@ -233,19 +233,19 @@
 // this code will produce a console log every second
 // when count >= max, the interval is cancelled, and the logging will stop
 
-var count = 0;
-var max = 10;
-var interval = 1000; // interval time in milliseconds
+// var count = 0;
+// var max = 10;
+// var interval = 1000; // interval time in milliseconds
 
-var intervalId = setInterval(function () {
-    if (count >= max) {
-        clearInterval(intervalId);
-        console.log('All done');
-    } else {
-        count++;
-        console.log('Repeating this line ' + count);
-    }
-}, interval);
+// var intervalId = setInterval(function () {
+//     if (count >= max) {
+//         clearInterval(intervalId);
+//         console.log('All done');
+//     } else {
+//         count++;
+//         console.log('Repeating this line ' + count);
+//     }
+// }, interval);
 
 
 // var delay = 5000; // delay time in milliseconds
@@ -257,3 +257,15 @@ var intervalId = setInterval(function () {
 // to cancel the timeout, you can call
 // clearTimeout(timeoutId);
 // prior to the delay expiring
+
+let randomObject = {
+    firstName : "wesley",
+    lastName : "bernard"
+    
+}
+
+randomObject.middleName = "dominique"
+
+// console.log(randomObject.middleName)
+
+console.log(randomObject)
