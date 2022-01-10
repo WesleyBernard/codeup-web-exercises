@@ -18,9 +18,9 @@
             // Otherwise, output the complete value
             let area;
             if (doRounding) {
-               area = Math.round(this.getArea());
+            area = Math.round(this.getArea());
             } else {
-               area = this.getArea();
+            area = this.getArea();
             }
 
 
