@@ -258,14 +258,14 @@
 // clearTimeout(timeoutId);
 // prior to the delay expiring
 
-let randomObject = {
-    firstName : "wesley",
-    lastName : "bernard"
+// let randomObject = {
+//     firstName : "wesley",
+//     lastName : "bernard"
     
-}
+// }
 
-randomObject.middleName = "dominique"
+// randomObject.middleName = "dominique"
 
-// console.log(randomObject.middleName)
+// // console.log(randomObject.middleName)
 
-console.log(randomObject)
+// console.log(randomObject)

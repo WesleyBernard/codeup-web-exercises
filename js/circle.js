@@ -16,7 +16,7 @@
             // TODO: complete this method.
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
-            let area;
+            //let area;
             if (doRounding) {
             area = Math.round(this.getArea());
             } else {
