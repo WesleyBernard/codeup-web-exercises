@@ -1,5 +1,6 @@
 *{
-    font-family: "Comic Sans MS", fantasy;
+    font-family: "comic-sans", fantasy;
+    color: aliceblue;
 }
 .fancy-header{
     color: purple;
@@ -17,10 +18,13 @@ body{
     background-size: contain;
 }
 a:hover{
+    color: black;
+}
+a:active{
     color: green;
 }
 a:visited{
-    color: purple;
+    color: yellow;
 }
 ul{
     list-style: square;
