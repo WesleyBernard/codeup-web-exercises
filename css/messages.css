@@ -1,0 +1,48 @@
+:root{
+    --blue: #038eec;
+    --red: #C0392B;
+    --yellow: #F4D03F;
+    --green: #27AE60
+
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+    opacity: 1;
+}
+.message-info{
+    background-color: var(--blue);
+    color: blue;
+    opacity: .7;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.message-success{
+    background-color: var(--green);
+    color: green;
+    opacity: .7;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.message-warning{
+    background-color: var(--yellow);
+    color: #919101;
+    opacity: .7;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.message-error{
+    background-color: var(--red);
+    color: #3d0000;
+    opacity: .7;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
