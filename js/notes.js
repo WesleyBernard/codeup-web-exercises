@@ -269,3 +269,26 @@
 // // console.log(randomObject.middleName)
 
 // console.log(randomObject)
+
+let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked"]
+
+// function arrayToString(myArray) {
+//     let s = ""
+//     for (let i = 0; i < myArray.length; i++) {
+//         s += myArray[i];
+//
+//     }
+//     console.log(s)
+// }
+//
+// arrayToString(randomArray);
+
+function arrayToString(myArray) {
+    let s = ""
+    myArray.forEach(function (array) {
+        s += array;
+    })
+    console.log(s);
+}
+
+arrayToString(randomArray);
