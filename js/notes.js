@@ -286,9 +286,9 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked"]
 function arrayToString(myArray) {
     let s = ""
     myArray.forEach(function (array) {
-        s += array;
+        s += `${array}, `;
     })
-    console.log(s);
+    console.log(s.substr(0,s.length-2));
 }
 
 arrayToString(randomArray);
