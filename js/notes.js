@@ -270,7 +270,7 @@
 
 // console.log(randomObject)
 
-let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked"]
+let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO", "JustChecking"]
 
 // function arrayToString(myArray) {
 //     let s = ""
@@ -283,12 +283,23 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked"]
 //
 // arrayToString(randomArray);
 
-function arrayToString(myArray) {
-    let s = ""
-    myArray.forEach(function (array) {
-        s += `${array}, `;
-    })
-    console.log(s.substr(0,s.length-2));
-}
+// function arrayToString(myArray) {
+//     let s = ""
+//     myArray.forEach(function (array) {
+//         s += `${array}, `;
+//     })
+//     console.log(s.substr(0,s.length-2));
+// }
+//
+// arrayToString(randomArray);
 
-arrayToString(randomArray);
+function removeAll(array,value) {
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] === value) {
+            array.splice(value, 1);
+            i--
+        }
+    }
+    return array
+}
+console.log(removeAll(randomArray, "OwO"))
