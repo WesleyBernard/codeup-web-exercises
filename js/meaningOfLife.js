@@ -26,4 +26,4 @@ function getMeaningOfLife(meaningfulNum) {
     }
 }
 
-getMeaningOfLife(-17);
+getMeaningOfLife(42);
