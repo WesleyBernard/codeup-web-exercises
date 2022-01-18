@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+.list{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0.75);
+}
+.listyboi{
+    padding: 2em 1em;
+    font-family: work-sans, sans-serif;
+}
+ul li:nth-child(5){
+    margin: 0 auto;
+    font-weight: bolder;
+    padding: .2em 0;
+    font-size: 3em;
+    font-family: Montserra, serif;
+}
+a{
+    display: inline-block;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
