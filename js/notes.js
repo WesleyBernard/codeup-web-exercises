@@ -293,13 +293,42 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 //
 // arrayToString(randomArray);
 
-function removeAll(array,value) {
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] === value) {
-            array.splice(value, 1);
-            i--
-        }
-    }
-    return array
+// function removeAll(array,value) {
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] === value) {
+//             array.splice(value, 1);
+//             i--
+//         }
+//     }
+//     return array
+// }
+// console.log(removeAll(randomArray, "OwO"))
+
+// Write a JS function called getNthCat that takes an array of cat objects as a first parameter called cats, and n as a second parameter.
+//     The function returns the cat object at index n in the cats array.
+//     For example:
+
+let myCats = []
+
+myCats[0] = {
+    catName: "Apollo",
+    age: 9
 }
-console.log(removeAll(randomArray, "OwO"))
+myCats[1] = {
+    catName: "Lucy",
+    age: 4
+}
+
+myCats[2] = {
+    catName: "Hythlodaeus",
+    age: 17
+}
+
+function someCat(cats, int) {
+    if(int < 0 || int >= cats.length) {
+        return "There's no cat there, my dude"
+    }
+    return cats[int];
+}
+
+console.log(someCat(myCats, 2));
