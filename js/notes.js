@@ -308,27 +308,29 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 //     The function returns the cat object at index n in the cats array.
 //     For example:
 
-let myCats = []
+// let myCats = []
 
-myCats[0] = {
-    catName: "Apollo",
-    age: 9
-}
-myCats[1] = {
-    catName: "Lucy",
-    age: 4
-}
+// myCats[0] = {
+//     catName: "Apollo",
+//     age: 9
+// }
+// myCats[1] = {
+//     catName: "Lucy",
+//     age: 4
+// }
 
-myCats[2] = {
-    catName: "Hythlodaeus",
-    age: 17
-}
+// myCats[2] = {
+//     catName: "Hythlodaeus",
+//     age: 17
+// }
 
-function someCat(cats, int) {
-    if(int < 0 || int >= cats.length) {
-        return "There's no cat there, my dude"
-    }
-    return cats[int];
-}
+// function someCat(cats, int) {
+//     if(int < 0 || int >= cats.length) {
+//         return "There's no cat there, my dude"
+//     }
+//     return cats[int];
+// }
 
-console.log(someCat(myCats, 2));
+// console.log(someCat(myCats, 2));
+// console.log(Date.now())
+console.log(Date.getMonth)
