@@ -333,4 +333,19 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 
 // console.log(someCat(myCats, 2));
 // console.log(Date.now())
-console.log(Date.getMonth)
+// console.log(Date.getMonth)
+
+// Write a function called reverseString that takes in a string and returns a string that has the characters of the original string in reverse order.
+//     example: reverseString('hello') - returns 'olleh'
+let sampleStr = "hello"
+// console.log(sampleStr.split(""));
+let reversedStr = ""
+
+
+function reverseStr(str) {
+    reversedStr = str.split("")
+    reversedStr.reverse()
+    return reversedStr.join("")
+}
+
+console.log(reverseStr("OwOUwULmao"))
