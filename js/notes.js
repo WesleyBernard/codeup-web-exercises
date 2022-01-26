@@ -337,15 +337,34 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 
 // Write a function called reverseString that takes in a string and returns a string that has the characters of the original string in reverse order.
 //     example: reverseString('hello') - returns 'olleh'
-let sampleStr = "hello"
-// console.log(sampleStr.split(""));
-let reversedStr = ""
+// let sampleStr = "hello"
+// // console.log(sampleStr.split(""));
+// let reversedStr = ""
+//
+//
+// function reverseStr(str) {
+//     reversedStr = str.split("")
+//     reversedStr.reverse()
+//     return reversedStr.join("")
+// }
+//
+// console.log(reverseStr("OwOUwULmao"))
 
+// Write a function called findAverage that takes in an array of integers representing grades and returns the average.
+//     Example input: [95, 74, 86, 100]
+// Example output: 88.75
 
-function reverseStr(str) {
-    reversedStr = str.split("")
-    reversedStr.reverse()
-    return reversedStr.join("")
+let nummys = [17, 5, 28, 60, 19, 72]
+
+function findAverage(intArray) {
+    let average = 0
+    for (let i = 0; i < intArray.length; i++) {
+        average += intArray[i]
+        // console.log(average);
+    }
+    return average / intArray.length
 }
 
-console.log(reverseStr("OwOUwULmao"))
+// console.log(nummys.length);
+
+console.log(findAverage([95, 74, 86, 100]));
