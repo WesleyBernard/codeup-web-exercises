@@ -354,17 +354,23 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 //     Example input: [95, 74, 86, 100]
 // Example output: 88.75
 
-let nummys = [17, 5, 28, 60, 19, 72]
+// let nummys = [17, 5, 28, 60, 19, 72]
+//
+// function findAverage(intArray) {
+//     let average = 0
+//     for (let i = 0; i < intArray.length; i++) {
+//         average += intArray[i]
+//         // console.log(average);
+//     }
+//     return average / intArray.length
+// }
+//
+// // console.log(nummys.length);
+//
+// console.log(findAverage([95, 74, 86, 100]));
 
-function findAverage(intArray) {
-    let average = 0
-    for (let i = 0; i < intArray.length; i++) {
-        average += intArray[i]
-        // console.log(average);
-    }
-    return average / intArray.length
+function sumOfSquares(a, b) {
+    return (a * a) + (b * b)
 }
 
-// console.log(nummys.length);
-
-console.log(findAverage([95, 74, 86, 100]));
+console.log(sumOfSquares(2, 3));
