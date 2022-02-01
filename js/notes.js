@@ -369,8 +369,23 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 //
 // console.log(findAverage([95, 74, 86, 100]));
 
-function sumOfSquares(a, b) {
-    return (a * a) + (b * b)
+// function sumOfSquares(a, b) {
+//     return (a * a) + (b * b)
+// }
+//
+// console.log(sumOfSquares(2, 3));
+
+function whichStringIsLonger(str1, str2) {
+    if (typeof str1 !== "string" || typeof str2 !== "string") {
+        return "One or both of these is not a string, try again."
+    } if (str1.length > str2.length) {
+        return "First string is longer"
+    } if (str2.length > str1.length) {
+        return "Second string is longer"
+    } if (str1.length === str2.length) {
+        return "Both strings are of equal length"
+    }
+
 }
 
-console.log(sumOfSquares(2, 3));
+console.log(whichStringIsLonger("super duper omegalol", true));
