@@ -1,5 +1,7 @@
-"use strict"
+(function () {
+    "use strict"
+    $(document).ready(function () {
+        alert("Ding! DOM is done")
+    })
+})();
 
-$(document).ready(function () {
-    alert("Ding! DOM is done")
-})
