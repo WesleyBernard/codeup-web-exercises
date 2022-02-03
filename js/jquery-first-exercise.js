@@ -1,7 +1,7 @@
 (function () {
     "use strict"
-    $(document).ready(function () {
-        alert("Ding! DOM is done")
-    })
+    $("li").css("font-size", "20px")
+    $("p, li, h1").css("background-color", "yellow")
+    alert($("h1").html())
 })();
 
