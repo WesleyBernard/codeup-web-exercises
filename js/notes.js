@@ -1,5 +1,6 @@
 'use strict';
 
+
 //--NUMBERS (INTRO)
 //I hope it's cool for me to take my notes in here
 //anyway, expressions in js will follow order of operations just like we did in middle school, (PEMDAS)
