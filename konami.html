@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Konami Code</title>
 </head>
 <body>
 <h1>Konami Code</h1>
+<div>
+
+</div>
+<section>
+    <audio id="megalovania" src="audio/Undertale-Megalovania.mp3" preload="auto"></audio>
+</section>
 
 <script src="/js/jquery-2.2.4.js"></script>
 <script>
@@ -26,6 +32,12 @@
         function success() {
             if(konamiPosition === 11) {
                 alert("wooooooow you did it")
+                $("body").css("font-family", "comic sans MS")
+                $("h1").css("color", "teal")
+                $("div").html("UwU")
+                $("#megalovania").play()
+
+                konamiPosition = 0
         }}
         success()
     });
