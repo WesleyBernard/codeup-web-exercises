@@ -8,8 +8,12 @@
 <div>
 
 </div>
-<section>
-    <audio id="megalovania" src="audio/Undertale-Megalovania.mp3" preload="auto"></audio>
+<section style="display: none">
+ <img src="https://miro.medium.com/max/1200/0*eB9A2yWgozOpK0Ox">
+    <audio id="megalovania"
+            controls
+            src="audio/Undertale-Megalovania.mp3">
+    </audio>
 </section>
 
 <script src="/js/jquery-2.2.4.js"></script>
@@ -34,7 +38,9 @@
                 alert("wooooooow you did it")
                 $("body").css("font-family", "comic sans MS")
                 $("h1").css("color", "teal")
-                $("div").html("UwU")
+                $("div").html("UwU").css("color", "red")
+                $("section").css("display", "inline-block")
+                $("html").css("background-color", "black")
                 $("#megalovania").play()
 
                 konamiPosition = 0
