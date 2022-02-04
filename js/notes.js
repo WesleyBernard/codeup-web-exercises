@@ -230,7 +230,6 @@
 // }
 
 
-
 // this code will produce a console log every second
 // when count >= max, the interval is cancelled, and the logging will stop
 
@@ -262,7 +261,7 @@
 // let randomObject = {
 //     firstName : "wesley",
 //     lastName : "bernard"
-    
+
 // }
 
 // randomObject.middleName = "dominique"
@@ -271,7 +270,7 @@
 
 // console.log(randomObject)
 
-let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO", "JustChecking"]
+let randomArray = ["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO", "JustChecking"]
 
 // function arrayToString(myArray) {
 //     let s = ""
@@ -376,17 +375,33 @@ let randomArray =["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO",
 //
 // console.log(sumOfSquares(2, 3));
 
-function whichStringIsLonger(str1, str2) {
-    if (typeof str1 !== "string" || typeof str2 !== "string") {
-        return "One or both of these is not a string, try again."
-    } if (str1.length > str2.length) {
-        return "First string is longer"
-    } if (str2.length > str1.length) {
-        return "Second string is longer"
-    } if (str1.length === str2.length) {
-        return "Both strings are of equal length"
+// function whichStringIsLonger(str1, str2) {
+//     if (typeof str1 !== "string" || typeof str2 !== "string") {
+//         return "One or both of these is not a string, try again."
+//     } if (str1.length > str2.length) {
+//         return "First string is longer"
+//     } if (str2.length > str1.length) {
+//         return "Second string is longer"
+//     } if (str1.length === str2.length) {
+//         return "Both strings are of equal length"
+//     }
+//
+// }
+//
+// console.log(whichStringIsLonger("super duper omegalol", true));
+
+// Write a function called convertLowHighToObject that takes in a string  that represents the low and high temperature in this format '35, 42' (assuming low will always be the left value and high the right) and returns an object with the properties 'low' and 'high' with the values of those respective properties set to the corresponding values in the input string.
+//     NOTE: the values in the object should be of the number type
+// Example input: '35, 42'
+// Example return: {low: 35, high: 42}
+
+function convertLowHighToObject(str) {
+    let myArray = str.split(", ")
+    return {
+        low: parseInt(myArray[0]),
+        high: parseInt(myArray[1])
     }
 
 }
 
-console.log(whichStringIsLonger("super duper omegalol", true));
+console.log(convertLowHighToObject("33, 48"));
