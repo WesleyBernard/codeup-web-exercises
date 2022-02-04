@@ -9,42 +9,44 @@
 
 </div>
 <section style="display: none">
- <img src="https://miro.medium.com/max/1200/0*eB9A2yWgozOpK0Ox">
-    <audio id="megalovania"
-            controls
-            src="audio/Undertale-Megalovania.mp3">
-    </audio>
+    <!-- <img src="https://miro.medium.com/max/1200/0*eB9A2yWgozOpK0Ox">-->
+    <!--    <audio id="megalovania"-->
+    <!--            controls-->
+    <!--            src="audio/Undertale-Megalovania.mp3">-->
+    <!--    </audio>-->
 </section>
 
 <script src="/js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
-    let konamiCode = [38,38,40,40,37,39,37,39,66,65,13]
+    let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
     let konamiPosition = 0
 
-    $(document).keyup(function(event){
+    $(document).keyup(function (event) {
         console.log(event.keyCode);
 
         if (event.keyCode === konamiCode[konamiPosition]) {
             konamiPosition++
             console.log(konamiPosition);
-        }
-        else {
+        } else {
             konamiPosition = 0
             console.log(konamiPosition);
         }
+
         function success() {
-            if(konamiPosition === 11) {
+            if (konamiPosition === 11) {
                 alert("wooooooow you did it")
                 $("body").css("font-family", "comic sans MS")
                 $("h1").css("color", "teal")
                 $("div").html("UwU").css("color", "red")
                 $("section").css("display", "inline-block")
                 $("html").css("background-color", "black")
-                $("#megalovania").play()
-
+                $('section').html(`<img src="https://miro.medium.com/max/1200/0*eB9A2yWgozOpK0Ox"><audio controls autoPlay>
+                    <source src="audio/Undertale-Megalovania.mp3">
+                    </audio>`)
                 konamiPosition = 0
-        }}
+            }
+        }
         success()
     });
 </script>
