@@ -1,7 +1,15 @@
 $(document).ready(function () {
     "use strict"
-    $("li").css("font-size", "20px")
-    $("p, li, h1").css("background-color", "yellow")
-    alert($("h1").html())
-})();
+    $("h1").click(function (e) {
+        $(this).css("background-color", "teal")
+    })
+    $("p").dblclick(function (e) {
+        $("p").css("font-size", "18px")
+    })
+    $("li").hover(function (e) {
+        $("li").css("background-color", "red")
+    }, function (e) {
+        $("li").css("background-color", "white")
+    } )
+});
 
