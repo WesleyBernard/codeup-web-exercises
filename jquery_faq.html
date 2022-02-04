@@ -16,6 +16,9 @@
         dt {
             margin: 2em;
         }
+        .bgChange {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +64,9 @@
     $().ready(function () {
         $("#sansFacts").click(function () {
             $("dd").toggleClass("invisible")
+        })
+        $("dt").click(function () {
+            $(this).toggleClass("bgChange")
         })
     })
 </script>
