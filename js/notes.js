@@ -270,7 +270,7 @@
 
 // console.log(randomObject)
 
-let randomArray = ["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO", "JustChecking"]
+// let randomArray = ["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO", "JustChecking"]
 
 // function arrayToString(myArray) {
 //     let s = ""
@@ -406,41 +406,68 @@ let randomArray = ["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO"
 //
 // console.log(convertLowHighToObject("33, 48"));
 
-console.log(parseFloat("000"));
+// console.log(parseFloat("000"));
 
-function numericsCheck(str) {
-    for (let i = 0; i <= str.length ; i++) {
-        if (isNaN(str[i]) === false) {
-            return i
-        }else if (i === str.length-1){
-            return 1
-        }
-    }
-}
-
-console.log(numericsCheck("Hello10"));
+// function numericsCheck(str) {
+//     for (let i = 0; i <= str.length ; i++) {
+//         if (isNaN(str[i]) === false) {
+//             return i
+//         }else if (i === str.length-1){
+//             return 1
+//         }
+//     }
+// }
+//
+// console.log(numericsCheck("Hello10"));
+//
+// function incrementString(str) {
+//     let numbers = numericsCheck(str)
+//     let answer = ""
+//     let oldStr = ""
+//     let zeroes = 0
+//     if (numbers === 1) {
+//         return str + 1
+//     }
+//     for (let i = numbers; i <=  str.length-1; i++) {
+//         if(str[i] === "0"){
+//             zeroes++
+//         }
+//         answer += str[i];
+//
+//     }
+//     for (let i = 0; i < numbers; i++) {
+//         oldStr += str[i]
+//
+//     }
+//     let newStr = parseInt(answer) + 1
+//     let finalAnswer = (oldStr + newStr)
+//     let gotIt = finalAnswer[finalAnswer.length-1]
+//     let omgPlease = parseInt(gotIt) + 1
+//     if( zeroes === 0) {
+//         return finalAnswer
+//     }
+//     if (zeroes > 0) {
+//         return zeroes
+//     }
+//
+//
+// }
 
 function incrementString(str) {
-    let numbers = numericsCheck(str)
-    let answer = ""
-    let oldStr = ""
-    if (numbers === 1) {
-        return str + 1
+    let numbers = []
+    let letters = []
+    let zeroes = 0
+    let theArray = str.split("")
+    for (let i = 0; i < theArray.length; i++) {
+        if (isNaN(theArray[i])) {
+            letters += theArray[i];
+        } else if(!isNaN(theArray[i])) {
+            numbers += theArray[i];
+        }
+        if(theArray[i] === '0') {
+            zeroes++
+        }
     }
-    for (let i = numbers; i <=  str.length-1; i++) {
-        answer += str[i];
-
-    }
-    for (let i = 0; i < numbers; i++) {
-        oldStr += str[i]
-
-    }
-    let newStr = parseInt(answer) + 1
-    let finalAnswer = (oldStr + answer)
-    let gotIt = finalAnswer[finalAnswer.length-1]
-    let omgPlease = parseInt(gotIt) + 1
-    return finalAnswer
-
 
 }
 
