@@ -395,13 +395,70 @@ let randomArray = ["UwU", "OwO", "Lmao", "GotIt", "ItWorks", "I'mCracked", "OwO"
 // Example input: '35, 42'
 // Example return: {low: 35, high: 42}
 
-function convertLowHighToObject(str) {
-    let myArray = str.split(", ")
-    return {
-        low: parseInt(myArray[0]),
-        high: parseInt(myArray[1])
+// function convertLowHighToObject(str) {
+//     let myArray = str.split(", ")
+//     return {
+//         low: parseInt(myArray[0]),
+//         high: parseInt(myArray[1])
+//     }
+//
+// }
+//
+// console.log(convertLowHighToObject("33, 48"));
+
+console.log(parseFloat("000"));
+
+function numericsCheck(str) {
+    for (let i = 0; i <= str.length ; i++) {
+        if (isNaN(str[i]) === false) {
+            return i
+        }else if (i === str.length-1){
+            return 1
+        }
     }
+}
+
+console.log(numericsCheck("Hello10"));
+
+function incrementString(str) {
+    let numbers = numericsCheck(str)
+    let answer = ""
+    let oldStr = ""
+    if (numbers === 1) {
+        return str + 1
+    }
+    for (let i = numbers; i <=  str.length-1; i++) {
+        answer += str[i];
+
+    }
+    for (let i = 0; i < numbers; i++) {
+        oldStr += str[i]
+
+    }
+    let newStr = parseInt(answer) + 1
+    let finalAnswer = (oldStr + answer)
+    let gotIt = finalAnswer[finalAnswer.length-1]
+    let omgPlease = parseInt(gotIt) + 1
+    return finalAnswer
+
 
 }
 
-console.log(convertLowHighToObject("33, 48"));
+console.log(incrementString("I'mCracked"));
+console.log(incrementString("foo"));
+console.log(incrementString("foobar23"));
+console.log(incrementString("foo0042"));
+console.log(incrementString("foo9"));
+console.log(incrementString("foo099"));
+
+// Examples:
+
+// foo -> foo1
+
+// foobar23 -> foobar24
+
+// foo0042 -> foo0043
+
+// foo9 -> foo10
+
+// foo099 -> foo100
