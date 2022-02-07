@@ -453,43 +453,43 @@
 //
 // }
 
-function incrementString(str) {
-    let numbers = []
-    let letters = []
-    let zeroes = 0
-    let zStr = ""
-    let theArray = str.split("")
-    for (let i = 0; i < theArray.length; i++) {
-        if (isNaN(theArray[i])) {
-            letters += theArray[i];
-        } else if(!isNaN(theArray[i])) {
-            numbers += theArray[i];
-        }
-        if(theArray[i] === '0') {
-            zeroes++
-        }
-    }
-    if (zeroes > 0) {
-        for (let i = 0; i < zeroes; i++) {
-            zStr += "0"
-
-        }
-    }
-    if (numbers === []) {
-        return str + 1
-    } else console.log(numbers);
-    return letters + zStr + (parseInt(numbers) + 1)
-
-}
-
-console.log(incrementString("I'mCracked"));
-console.log(incrementString("foo"));
-console.log(incrementString("foobar23"));
-console.log(incrementString("foo0042"));
-console.log(incrementString("foo9"));
-console.log(incrementString("foo099"));
-// extra test case
-console.log(incrementString("foo000"));
+// function incrementString(str) {
+//     let numbers = []
+//     let letters = []
+//     let zeroes = 0
+//     let zStr = ""
+//     let theArray = str.split("")
+//     for (let i = 0; i < theArray.length; i++) {
+//         if (isNaN(theArray[i])) {
+//             letters += theArray[i];
+//         } else if(!isNaN(theArray[i])) {
+//             numbers += theArray[i];
+//         }
+//         if(theArray[i] === '0') {
+//             zeroes++
+//         }
+//     }
+//     if (zeroes > 0) {
+//         for (let i = 0; i < zeroes; i++) {
+//             zStr += "0"
+//
+//         }
+//     }
+//     if (numbers === []) {
+//         return str + 1
+//     } else console.log(numbers);
+//     return letters + zStr + (parseInt(numbers) + 1)
+//
+// }
+//
+// console.log(incrementString("I'mCracked"));
+// console.log(incrementString("foo"));
+// console.log(incrementString("foobar23"));
+// console.log(incrementString("foo0042"));
+// console.log(incrementString("foo9"));
+// console.log(incrementString("foo099"));
+// // extra test case
+// console.log(incrementString("foo000"));
 
 // Examples:
 
@@ -502,3 +502,37 @@ console.log(incrementString("foo000"));
 // foo9 -> foo10
 
 // foo099 -> foo100
+
+function camel(str) {
+    if (str.includes("-")) {
+        let answer = str.split("-")
+        for (let i = 0; i < answer.length; i++) {
+            if (i>0) {
+                answer[i] = answer[i].slice(0,1).toUpperCase() + answer[i].slice(1)
+                console.log(answer[i]);
+                //console.log(typeof answer[i][0])
+            }
+        }
+        console.log(answer);
+        return answer.join("")
+    }
+    if (str.includes("_")) {
+        let answer = str.split("_")
+        for (let i = 0; i < answer.length; i++) {
+            if (i>0) {
+                answer[i] = answer[i].slice(0,1).toUpperCase() + answer[i].slice(1)
+                console.log(answer[i]);
+                //console.log(typeof answer[i][0])
+            }
+        }
+        console.log(answer);
+        return answer.join("")
+    }
+
+}
+
+console.log(camel("the-stealthy-warrior"));
+console.log(camel("the_stealthy_warrior"));
+console.log(camel("I'm-pretty-sure-i-did-it"));
+
+
