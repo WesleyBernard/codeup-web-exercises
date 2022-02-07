@@ -29,6 +29,7 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     $("#refresh").click(function () {
+        $("table").html("")
         $.get("data/inventory.json").done(function (data, status, jqXhr) {
             data.forEach(function (tool) {
                 $("table").append(`<tr class="border border-primary"><td class="border border-danger">${tool.title}</td><td class="border border-danger">${tool.quantity}</td class="border border-danger"><td class="border border-danger">${tool.price}</td><td class="border border-danger">${tool.categories}</td></tr>`)
