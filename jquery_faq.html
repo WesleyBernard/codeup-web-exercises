@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>C Sans</title>
     <style>
-        *{
+        * {
             font-family: "Comic Sans MS", serif;
         }
-        .invisible{
+
+        .invisible {
             visibility: hidden;
         }
+
         dl {
             margin-left: 2em;
         }
+
         dt {
             margin: 2em;
         }
+
         .bgChange {
             color: red;
         }
@@ -29,36 +33,73 @@
     <dd class="invisible">october 1994</dd>
 
     <dt>original intended use</dt>
-    <dd class="invisible">Comic Sans was originally designed to be used in the talk bubbles of a program called Microsoft Bob. </dd>
+    <dd class="invisible">Comic Sans was originally designed to be used in the talk bubbles of a program called
+        Microsoft Bob.
+    </dd>
 
     <dt>Creator</dt>
     <dd class="invisible">Vincent Connare</dd>
 
     <dt>Connare</dt>
-    <dd class="invisible">Connare did design some other famous fonts too. He’s responsible for Trebuchet, Marlett, Magpie, and some of the Webdings.</dd>
+    <dd class="invisible">Connare did design some other famous fonts too. He’s responsible for Trebuchet, Marlett,
+        Magpie, and some of the Webdings.
+    </dd>
 
     <dt>Foundry</dt>
     <dd class="invisible">Microsoft</dd>
 
     <dt>Inspiration</dt>
-    <dd class="invisible">Connare says that he happened to have two comics in his office when he set out on his Comic Sans project: The Dark Knight Returns and Watchmen. So, he says, he’d look at the print in those books… then adapt their styles to make Comic Sans.</dd>
+    <dd class="invisible">Connare says that he happened to have two comics in his office when he set out on his Comic
+        Sans project: The Dark Knight Returns and Watchmen. So, he says, he’d look at the print in those books… then
+        adapt their styles to make Comic Sans.
+    </dd>
 
     <dt>Skype</dt>
-    <dd class="invisible">In Skype messenger, if you change your font to Comic Sans then the emoticon next to the text-field turns into a frowny, disapproving face. But if you change it to any other font then the smiley face returns.</dd>
+    <dd class="invisible">In Skype messenger, if you change your font to Comic Sans then the emoticon next to the
+        text-field turns into a frowny, disapproving face. But if you change it to any other font then the smiley face
+        returns.
+    </dd>
 
     <dt>Rate of Ownership</dt>
-    <dd class="invisible"> Comic Sans is available on 99.13% of Windows computers and 90.91% of Macs. Only an estimated 61% of Linux users have Comic Sans, however.</dd>
+    <dd class="invisible"> Comic Sans is available on 99.13% of Windows computers and 90.91% of Macs. Only an estimated
+        61% of Linux users have Comic Sans, however.
+    </dd>
 
     <dt>Cost</dt>
-    <dd class="invisible">If you’re unlucky enough to be one of the 0.87% of Windows users who doesn’t have Comic Sans, you can buy it, but at a high price. Comic Sans is readily on sale at $30. And no, that’s not a joke, if you want it and you gotta pay for it then you gotta pay the full $30!</dd>
+    <dd class="invisible">If you’re unlucky enough to be one of the 0.87% of Windows users who doesn’t have Comic Sans,
+        you can buy it, but at a high price. Comic Sans is readily on sale at $30. And no, that’s not a joke, if you
+        want it and you gotta pay for it then you gotta pay the full $30!
+    </dd>
 
     <dt>This one airline one time</dt>
-    <dd class="invisible">In 2013, Dutch airline giant KLM even decided to get in on the fun, changing the font on their website to Comic Sans and offering people named C. Sans the chance to win free plane tickets!</dd>
-
-
-
+    <dd class="invisible">In 2013, Dutch airline giant KLM even decided to get in on the fun, changing the font on their
+        website to Comic Sans and offering people named C. Sans the chance to win free plane tickets!
+    </dd>
 
 </dl>
+
+<h3>Yellow Stone</h3>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>Four</li>
+</ul>
+<h3>Yellow Stone</h3>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>Four</li>
+</ul>
+<h3>Yellow Stone</h3>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>Four</li>
+</ul>
+<button id="theButton">I'm the button</button>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     $().ready(function () {
@@ -67,6 +108,19 @@
         })
         $("dt").click(function () {
             $(this).toggleClass("bgChange")
+        })
+        $("#theButton").click(function (e) {
+            $("ul").each(function (e) {
+                $(this).children().last().css("background-color", "yellow")
+
+            })
+
+        })
+        $("h3").click(function (e) {
+            $(this).next().children().css("font-weight", "bold")
+        })
+        $("li").click(function (e) {
+            $(this).parent().children().first().css("color", "blue")
         })
     })
 </script>
