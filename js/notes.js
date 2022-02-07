@@ -457,6 +457,7 @@ function incrementString(str) {
     let numbers = []
     let letters = []
     let zeroes = 0
+    let zStr = ""
     let theArray = str.split("")
     for (let i = 0; i < theArray.length; i++) {
         if (isNaN(theArray[i])) {
@@ -468,6 +469,16 @@ function incrementString(str) {
             zeroes++
         }
     }
+    if (zeroes > 0) {
+        for (let i = 0; i < zeroes; i++) {
+            zStr += "0"
+
+        }
+    }
+    if (numbers === []) {
+        return str + 1
+    } else console.log(numbers);
+    return letters + zStr + (parseInt(numbers) + 1)
 
 }
 
