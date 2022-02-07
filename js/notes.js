@@ -488,6 +488,8 @@ console.log(incrementString("foobar23"));
 console.log(incrementString("foo0042"));
 console.log(incrementString("foo9"));
 console.log(incrementString("foo099"));
+// extra test case
+console.log(incrementString("foo000"));
 
 // Examples:
 
