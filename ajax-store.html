@@ -29,7 +29,15 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     $("#refresh").click(function () {
-        $("table").html("")
+        $("body").css("font-family", "comic sans MS")
+        $("table").html(`<thead>
+        <tr class="border border-primary">
+            <th class="border border-danger">Title</th>
+            <th class="border border-danger">Quantity</th>
+            <th class="border border-danger">Price</th>
+            <th class="border border-danger">Categories</th>
+        </tr>
+    </thead>`)
         $.get("data/inventory.json").done(function (data, status, jqXhr) {
             data.forEach(function (tool) {
                 $("table").append(`<tr class="border border-primary"><td class="border border-danger">${tool.title}</td><td class="border border-danger">${tool.quantity}</td class="border border-danger"><td class="border border-danger">${tool.price}</td><td class="border border-danger">${tool.categories}</td></tr>`)
