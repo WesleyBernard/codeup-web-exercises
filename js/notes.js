@@ -507,8 +507,8 @@ function camel(str) {
     if (str.includes("-")) {
         let answer = str.split("-")
         for (let i = 0; i < answer.length; i++) {
-            if (i>0) {
-                answer[i] = answer[i].slice(0,1).toUpperCase() + answer[i].slice(1)
+            if (i > 0) {
+                answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
                 console.log(answer[i]);
                 //console.log(typeof answer[i][0])
             }
@@ -519,8 +519,8 @@ function camel(str) {
     if (str.includes("_")) {
         let answer = str.split("_")
         for (let i = 0; i < answer.length; i++) {
-            if (i>0) {
-                answer[i] = answer[i].slice(0,1).toUpperCase() + answer[i].slice(1)
+            if (i > 0) {
+                answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
                 console.log(answer[i]);
                 //console.log(typeof answer[i][0])
             }
