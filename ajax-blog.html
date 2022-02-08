@@ -18,7 +18,7 @@
 $().ready(function () {
     $.get("data/blog.json").done(function (data) {
         data.forEach(function (post) {
-            $("#posts").append(`<div class="card col-4 mx-2 p-0 border-info" style="width: 18rem;">
+            $("#posts").append(`<div class="card col-4 mx-2 my-2 p-0 border-info" style="width: 18rem;">
   <div class="card-body bg-dark text-success">
     <h5 class="card-title">${post.title}</h5>
     <h6 class="card-subtitle mb-2 text-info">${post.date}</h6>
