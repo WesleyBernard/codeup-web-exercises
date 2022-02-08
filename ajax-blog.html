@@ -16,14 +16,18 @@
 <script src="js/jquery-2.2.4.js"></script>
 <script>
 $().ready(function () {
+
     $.get("data/blog.json").done(function (data) {
         data.forEach(function (post) {
             $("#posts").append(`<div class="card col-4 mx-2 my-2 p-0 border-info" style="width: 18rem;">
+<h5 class="card-header bg-info text-white">${post.title}</h5>
+
   <div class="card-body bg-dark text-success">
-    <h5 class="card-title">${post.title}</h5>
     <h6 class="card-subtitle mb-2 text-info">${post.date}</h6>
     <p class="card-text">${post.content}</p>
-    <a href="#" class="card-link">${post.categories}</a>
+  </div>
+  <div class="card-footer text-white bg-info">
+    #${post.categories.join(" #")}
   </div>
 </div>`)
         })
@@ -32,3 +36,5 @@ $().ready(function () {
 </script>
 </body>
 </html>
+
+<!--answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)-->
