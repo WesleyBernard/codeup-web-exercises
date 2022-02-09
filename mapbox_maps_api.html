@@ -63,8 +63,9 @@
             markify(result, restaurant.Blerb)
         })
     })
-
-
+    geocode("glen Burnie MD", WES_MAPBOX_API_KEY).then(function (result) {
+        map.setCenter(result)
+    })
 
     map.addControl(
         new MapboxGeocoder({
