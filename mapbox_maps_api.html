@@ -23,10 +23,32 @@
 <script src="/js/keys.js"></script>
 
 <script>
-    function markify(result) {
-        new mapboxgl.Marker()
+    var restaurants = [
+        {
+            name: "SuhiQ",
+            address: "691 Old Mill Rd, Millersville, MD 21108",
+            Blerb: "this place is really neat",
+        },
+        {
+            name: "Taco Bell",
+            address: "6656 Ritchie Hwy, Glen Burnie, MD 21061",
+            Blerb: "the sauce be fire",
+        },
+        {
+            name: "KFC",
+            address: "Cloverleaf Business Center, 8073 Veterans Hwy, Millersville, MD 21108",
+            Blerb: "finger lickin good",
+        }
+    ]
+
+
+    function markify(result, blerb) {
+        let marker = new mapboxgl.Marker()
             .setLngLat(result)
-            .addTo(map);
+            .addTo(map)
+        let restaurantPopup = new mapboxgl.Popup()
+            .setHTML(blerb)
+        marker.setPopup(restaurantPopup);
     }
     mapboxgl.accessToken = WES_MAPBOX_API_KEY;
     var map = new mapboxgl.Map({
@@ -36,20 +58,22 @@
         center: [-98.4916, 29.4252]
     });
 
-    geocode("Bellflower CA", WES_MAPBOX_API_KEY).then(function (result) {
-        map.setCenter(result)
-        markify(result)
-        setTimeout(function (e) {
-            map.setZoom(1)
-        },5000)
-
+    restaurants.forEach(function (restaurant) {
+        geocode(restaurant.address, WES_MAPBOX_API_KEY).then(function (result) {
+            markify(result, restaurant.Blerb)
+        })
     })
+
+
+
     map.addControl(
         new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl
         })
+
     );
+
 </script>
 </body>
 </html>
