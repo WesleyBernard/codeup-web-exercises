@@ -3,14 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather map API</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: "Comic Sans MS";
+        }
+        #map {
+            height: 700px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+<div id="weatherCard" class="d-flex"></div>
+<div id="map"></div>
 
-<SCRIPT SRC="js/jquery-2.2.4.js"></SCRIPT>
-<script src="js/keys.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+<script src="js/jquery-2.2.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/js/keys.js"></script>
+
 <script>
+    function markify(result, blerb) {
+        let marker = new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map)
+        if (!blerb) {
+            return
+        }
+        let restaurantPopup = new mapboxgl.Popup()
+            .setHTML(blerb)
+        marker.setPopup(restaurantPopup);
+    }
+    mapboxgl.accessToken = WES_MAPBOX_API_KEY;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+    geocode("glen Burnie MD", WES_MAPBOX_API_KEY).then(function (result) {
+        map.setCenter(result)
+    })
+
+    let geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        marker: false
+    })
+    geocoder.addTo(map)
+    map.on("click", function (e) {
+        console.log(e)
+        //markify(e.lngLat)
+    })
     $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely&appid=${WES_WEATHERAPI_KEY}&units=imperial`).done(function (results) {
         console.log(results)
+        results.daily.forEach(function (day, index) {
+            if (index > 4) {
+                return
+            }
+            $("#weatherCard").append(`<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">date</h5>
+    <h6 class="card-subtitle mb-2 text-muted">daytime feels like: ${day.feels_like.day}</h6>
+    <div class="card-text">Daytime tempature: ${day.temp.day}</div>
+    <div class="card-text">${day.wind_speed}</div>
+    <a href="https://en.wikipedia.org/wiki/Comic_Sans" class="card-link">comic sans wiki</a>
+  </div>
+</div>`)
+        })
     })
 </script>
 </body>
