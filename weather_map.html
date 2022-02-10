@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather map API</title>
+</head>
+<body>
+
+<SCRIPT SRC="js/jquery-2.2.4.js"></SCRIPT>
+<script src="js/keys.js"></script>
+<script>
+    $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely&appid=${WES_WEATHERAPI_KEY}&units=imperial`).done(function (results) {
+        console.log(results)
+    })
+</script>
+</body>
+</html>
