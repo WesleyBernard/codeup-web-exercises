@@ -46,6 +46,9 @@
         let marker = new mapboxgl.Marker()
             .setLngLat(result)
             .addTo(map)
+        if (!blerb) {
+            return
+        }
         let restaurantPopup = new mapboxgl.Popup()
             .setHTML(blerb)
         marker.setPopup(restaurantPopup);
@@ -73,6 +76,10 @@
             marker: false
     })
     geocoder.addTo(map)
+    map.on("click", function (e) {
+        console.log(e)
+        markify(e.lngLat)
+    })
 
 
 </script>
