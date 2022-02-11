@@ -19,7 +19,6 @@
         }
         let unix_timestamp = arr.dt;
         let date = new Date(unix_timestamp * 1000);
-        unix_timestamp = arr.dt;
         date = new Date(unix_timestamp * 1000);
         let year = date.getFullYear();
         let month = date.getMonth();
