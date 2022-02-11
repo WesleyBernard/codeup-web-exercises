@@ -20,6 +20,7 @@
         let unix_timestamp = arr.dt;
         let date = new Date(unix_timestamp * 1000);
         date = new Date(unix_timestamp * 1000);
+        console.log(date)
         let year = date.getFullYear();
         let month = date.getMonth();
         let dayNum = date.getDate();
