@@ -11,8 +11,6 @@
             .setHTML(blerb)
         marker.setPopup(restaurantPopup);
     }
-
-
     function appendify(target, arr, index) {
         if (index === 0) {
             target.html("")
@@ -39,7 +37,6 @@
   </div>
 </div>`)
     }
-
     function getify(lat, long, key) {
         $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=hourly,minutely&appid=${key}&units=imperial`).done(function (results) {
             console.log(results)
@@ -53,7 +50,6 @@
             })
         })
     }
-
     mapboxgl.accessToken = WES_MAPBOX_API_KEY;
     var map = new mapboxgl.Map({
         container: 'map',
