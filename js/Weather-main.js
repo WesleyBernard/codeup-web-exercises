@@ -17,13 +17,10 @@
         }
         let unix_timestamp = arr.dt;
         let date = new Date(unix_timestamp * 1000);
-        date = new Date(unix_timestamp * 1000);
-        let year = date.getFullYear();
-        let month = date.getMonth();
-        let dayNum = date.getDate();
+        date = new Date(unix_timestamp * 1000).toLocaleDateString();
         target.append(`<div class="card" style="width: 25rem;">
   <div class="card-body">
-    <h5 class="card-title">Date: ${year}-${month}-${dayNum}</h5>
+    <h5 class="card-title">Date: ${date}</h5>
     <h6 class="card-subtitle mb-2">Daytime feels like: ${arr.feels_like.day}</h6>
     <h6 class="card-subtitle mb-2">Nighttime feels like: ${arr.feels_like.night}</h6>
     <div class="card-text">Daytime tempature: ${arr.temp.day}</div>
