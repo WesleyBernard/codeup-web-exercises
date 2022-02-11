@@ -66,7 +66,6 @@
     })
     geocoder.addTo(map)
     map.on("click", function (e) {
-        console.log(e.lngLat)
         markify(e.lngLat)
         getify(e.lngLat.lat, e.lngLat.lng, WES_WEATHERAPI_KEY)
     })
