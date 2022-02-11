@@ -22,7 +22,7 @@
         let year = date.getFullYear();
         let month = date.getMonth();
         let dayNum = date.getDate();
-        target.append(`<div class="card" style="width: 18rem;">
+        target.append(`<div class="card" style="width: 25rem;">
   <div class="card-body">
     <h5 class="card-title">Date: ${year}-${month}-${dayNum}</h5>
     <h6 class="card-subtitle mb-2">Daytime feels like: ${arr.feels_like.day}</h6>
@@ -40,7 +40,6 @@
     function getify(lat, long, key) {
         $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=hourly,minutely&appid=${key}&units=imperial`).done(function (results) {
             console.log(results)
-            let timeZone = results.timezone
             results.daily.forEach(function (day, index) {
 
                 if (index > 4) {
