@@ -18,7 +18,6 @@
         let unix_timestamp = arr.dt;
         let date = new Date(unix_timestamp * 1000);
         date = new Date(unix_timestamp * 1000);
-        console.log(date)
         let year = date.getFullYear();
         let month = date.getMonth();
         let dayNum = date.getDate();
@@ -29,8 +28,8 @@
     <h6 class="card-subtitle mb-2">Nighttime feels like: ${arr.feels_like.night}</h6>
     <div class="card-text">Daytime tempature: ${arr.temp.day}</div>
     <div class="card-text">Nighttime tempature: ${arr.temp.night}</div>
-    <div class="card-text">Min tempature: ${arr.temp.min}</div>
-    <div class="card-text">Max tempature: ${arr.temp.max}</div>
+    <div class="card-text">Low: ${arr.temp.min}</div>
+    <div class="card-text">High: ${arr.temp.max}</div>
     <div class="card-text">Wind speed: ${arr.wind_speed}</div>
     <div class="card-footer"><img src="http://openweathermap.org/img/wn/${arr.weather[0].icon}.png"</div>
     <a href="https://en.wikipedia.org/wiki/Comic_Sans" class="card-link">comic sans wiki</a>
@@ -72,7 +71,6 @@
         getify(e.lngLat.lat, e.lngLat.lng, WES_WEATHERAPI_KEY)
     })
     geocoder.on("result", function (e) {
-        console.log(e)
         getify(e.result.center[1], e.result.center[0], WES_WEATHERAPI_KEY)
     })
 }))
