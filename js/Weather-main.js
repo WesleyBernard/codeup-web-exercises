@@ -59,7 +59,6 @@
     let geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
-        marker: false
     })
     geocoder.addTo(map)
     map.on("click", function (e) {
