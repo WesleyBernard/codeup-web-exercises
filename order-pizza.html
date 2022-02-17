@@ -41,7 +41,7 @@
     <div class="jumbotron jumbotron-fluid d-none d-md-block">
         <h1>Welcome to Pizza world</h1>
     </div>
-<!--    Header and nav tabs-->
+    <!--    Header and nav tabs-->
     <h2>Build your own Pizza! UwU</h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -59,10 +59,11 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <!--            Card one-->
+            <!--            Big card-->
             <div class="card">
                 <div class="card-header text-white bg-primary">Choose size and crust</div>
                 <div class="container mt-3">
+                    <!--                    card one-->
                     <div class="card">
                         <div class="card-header">
                             Hand Tossed
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                            <!--                card two-->
+                <!--                card two-->
                 <div class="container mt-3">
                     <div class="card">
                         <div class="card-header">
@@ -101,7 +102,8 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="pizza-type" id="medium-crispy">
+                                        <input class="form-check-input" type="radio" name="pizza-type"
+                                               id="medium-crispy">
                                         <label class="form-check-label" for="medium-crispy">
                                             medium(12")
                                         </label>
@@ -119,10 +121,87 @@
                         </div>
                     </div>
                 </div>
+                <div class="card-footer">
+                    <button>Next step</button>
+                </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">UwU</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Omegalol</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <!--            Big card-->
+            <div class="card">
+                <div class="card-header text-white bg-primary">Choose cheese n sauce</div>
+                <!--                Card one-->
+                <div class="card">
+                    <div class="card-header">Cheese</div>
+                    <div class="card-body">
+                        How much? <br>
+                        <label for="cheese">How much cheese would you like?:</label><br>
+
+                        <select name="cheese" id="cheese">
+                            <option value="Light">Light</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Heavy">Heavy</option>
+                            <option value="Extra">Cheese me up, king</option>
+                        </select>
+                    </div>
+                </div>
+                <!--                Card two-->
+                <div class="card">
+                    <div class="card-header">Sauce</div>
+                    <div class="card-body">
+                        What type? <br>
+                        <label for="sauce">What type of sauce would you like?:</label><br>
+
+                        <select name="sauce" id="sauce">
+                            <option value="Tomato">Tomato</option>
+                            <option value="Alfredo">Alfredo</option>
+                            <option value="Vegan">Vegan</option>
+                        </select>
+                    </div>
+                    <div class="card-footer">
+                        <button>Prev Step</button>
+                        <button>Next step</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<!--            big card-->
+            <div class="card">
+                <div class="card-header text-white bg-primary">Choose toppings</div>
+<!--                card one-->
+                <div class="card">
+                    <div class="card-header">Choose meets</div>
+                    <div class="card-body">
+                        <input type="checkbox" id="topping1" name="topping1" value="Beef">
+                        <label for="topping1"> Beef</label><br>
+                        <input type="checkbox" id="topping2" name="topping2" value="Ham">
+                        <label for="topping2"> Ham</label><br>
+                        <input type="checkbox" id="topping3" name="topping3" value="Steak">
+                        <label for="topping3"> Steak</label><br>
+                        <input type="checkbox" id="topping4" name="topping4" value="Bacon">
+                        <label for="topping4"> Bacon</label><br>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Choose non-meets</div>
+                    <div class="card-body">
+                        <input type="checkbox" id="topping8" name="topping8" value="Green Pepper">
+                        <label for="topping8"> Green pepper</label><br>
+                        <input type="checkbox" id="topping5" name="topping5" value="Onions">
+                        <label for="topping5"> Onions</label><br>
+                        <input type="checkbox" id="topping6" name="topping6" value="Jalapenos">
+                        <label for="topping6"> Jalapenos</label><br>
+                        <input type="checkbox" id="topping7" name="topping7" value="Mushrooms">
+                        <label for="topping7"> Mushrooms</label><br>
+                    </div>
+                </div>
+                <div class="card-footer"> <button> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg> Checkout</button> </div>
+            </div>
+        </div>
     </div>
 </div>
 
