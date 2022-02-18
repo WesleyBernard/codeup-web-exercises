@@ -2,7 +2,7 @@
     function seeCommits(owner, repo) {
     fetch(`  https://api.github.com/repos/${owner}/${repo}/commits`, {headers: {'Authorization': WES_GITHUB_KEY}})
         .then(e => e.json())
-        .then(EON => console.log(EON[0].commit.author.date))
+        .then(EON => console.log(new Date(EON[0].commit.author.date).toLocaleString()))
         .catch(e => console.log(e))
 }
 seeCommits("WesleyBernard", "codeup-web-exercises");
@@ -10,11 +10,8 @@ seeCommits("WesleyBernard", "codeup-web-exercises");
      function wait(MS) {
          return new Promise((resolve, reject) => {
              setTimeout(() => {
-                 if (Math.random() > 0.5) {
-                    return resolve("UwU");
-                 } else {
-                    return reject("OwO");
-                 }
+                 resolve("UwU")
+                 reject("OwO")
              }, MS)
          })
      }
