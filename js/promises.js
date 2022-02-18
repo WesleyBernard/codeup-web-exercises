@@ -7,7 +7,7 @@
 }
 seeCommits("WesleyBernard", "codeup-web-exercises");
 
-     function wait(MS) {
+     const wait = MS => {
          return new Promise((resolve, reject) => {
              setTimeout(() => {
                  resolve("UwU")
