@@ -503,36 +503,50 @@
 
 // foo099 -> foo100
 
-function camel(str) {
-    if (str.includes("-")) {
-        let answer = str.split("-")
-        for (let i = 0; i < answer.length; i++) {
-            if (i > 0) {
-                answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
-                console.log(answer[i]);
-                //console.log(typeof answer[i][0])
-            }
-        }
-        console.log(answer);
-        return answer.join("")
-    }
-    if (str.includes("_")) {
-        let answer = str.split("_")
-        for (let i = 0; i < answer.length; i++) {
-            if (i > 0) {
-                answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
-                console.log(answer[i]);
-                //console.log(typeof answer[i][0])
-            }
-        }
-        console.log(answer);
-        return answer.join("")
-    }
+// function camel(str) {
+//     if (str.includes("-")) {
+//         let answer = str.split("-")
+//         for (let i = 0; i < answer.length; i++) {
+//             if (i > 0) {
+//                 answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
+//                 console.log(answer[i]);
+//                 //console.log(typeof answer[i][0])
+//             }
+//         }
+//         console.log(answer);
+//         return answer.join("")
+//     }
+//     if (str.includes("_")) {
+//         let answer = str.split("_")
+//         for (let i = 0; i < answer.length; i++) {
+//             if (i > 0) {
+//                 answer[i] = answer[i].slice(0, 1).toUpperCase() + answer[i].slice(1)
+//                 console.log(answer[i]);
+//                 //console.log(typeof answer[i][0])
+//             }
+//         }
+//         console.log(answer);
+//         return answer.join("")
+//     }
 
-}
+// }
+//
+// console.log(camel("the-stealthy-warrior"));
+// console.log(camel("the_stealthy_warrior"));
+// console.log(camel("I'm-pretty-sure-i-did-it"));
 
-console.log(camel("the-stealthy-warrior"));
-console.log(camel("the_stealthy_warrior"));
-console.log(camel("I'm-pretty-sure-i-did-it"));
+// const isDivisibleBy3 = n => n % 3 === 0;
+//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//
+// console.log(numbers.filter(isDivisibleBy3));
+// console.log(numbers);
 
+// function sayHello(name) {
+//     return 'Hello, ' + name + '!';
+// }
+const sayHello = (name) => { 'Hello, ' + name + '!' }
 
+console.log(sayHello("Wesley"));
+``
+''
