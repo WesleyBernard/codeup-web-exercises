@@ -545,8 +545,39 @@
 // function sayHello(name) {
 //     return 'Hello, ' + name + '!';
 // }
-const sayHello = (name) => { 'Hello, ' + name + '!' }
+// const sayHello = (name) => { 'Hello, ' + name + '!' }
+//
+// console.log(sayHello("Wesley"));
+// ``
+// ''
 
-console.log(sayHello("Wesley"));
-``
-''
+// Write a function called countDuplicates that takes in a string and returns an object that contains the count for each letter within the given string.
+//     ex: countDuplicates("adsjfdsfsfjsdjfhacabcsbajda")
+// returns { a: 5, d: 4, s: 5, j: 4, f: 4, h: 1, c: 2, b: 2 }
+
+// function countDuplicates(str){
+//     let arr = str.split("")
+//         .filter(function (item, pos, self) {
+//         return self.indexOf(item) === pos;
+//     })
+//     console.log(arr)
+//     for (let i = 0; i < arr.length; i++) {
+//        let oldArr = str.split("")
+//            oldArr.reduce(arr[i],oldArr[0], )
+//
+//     }
+//
+//
+// }
+//
+// countDuplicates("skdfjfkjadhsf")
+
+// Raymond's answer below
+
+// const countDuplicates = function (string){
+//     return string.split('').reduce((total, letter) => {
+//         total[letter] ? total[letter]++ : total[letter] = 1;
+//         return total
+//     }, {})
+// }
+// console.log(countDuplicates("adsjfdsfsfjsdjfhacabcsbajda"))
