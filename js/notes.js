@@ -598,7 +598,7 @@ function makePerson(name, age){
         personName: "",
         age: 0
     }
-        if(name.length < 1 || age > 150 || age < 0){
+        if(name.length < 1 || age > 150 || age < 1){
             console.log("non-valid parameters. Please note that Name must be at least 1 character long. age must be between 1 and 150. Please try again")
             return false;
     }
