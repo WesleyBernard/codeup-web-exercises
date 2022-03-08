@@ -581,3 +581,30 @@
 //     }, {})
 // }
 // console.log(countDuplicates("adsjfdsfsfjsdjfhacabcsbajda"))
+
+// Write a function called makePerson. It takes 2 arguments: personName and age.
+//     personName must be at least 1 character long. age must be between 1 and 150.
+// If either of the parameters is invalid, output an appropriate message to the console and return FALSE.
+//     If both parameters are valid, return an object containing personName and age.
+//     E.g.,
+//     console.log(makePerson("Bob", 30)); // outputs {personName:"Bob", age:30}
+// console.log(makePerson("", 30));
+// // outputs:
+// Person name cannot be blank
+// false
+
+function makePerson(name, age){
+    let person = {
+        personName: "",
+        age: 0
+    }
+        if(name.length < 1 || age > 150 || age < 0){
+            console.log("non-valid parameters. Please note that Name must be at least 1 character long. age must be between 1 and 150. Please try again")
+            return false;
+    }
+        person.personName = name
+    person.age = age;
+    console.log(person)
+}
+
+makePerson("Wesley", 25)
