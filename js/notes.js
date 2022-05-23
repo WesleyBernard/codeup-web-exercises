@@ -593,18 +593,41 @@
 // Person name cannot be blank
 // false
 
-function makePerson(name, age){
-    let person = {
-        personName: "",
-        age: 0
-    }
-        if(name.length < 1 || age > 150 || age < 1){
-            console.log("non-valid parameters. Please note that Name must be at least 1 character long. age must be between 1 and 150. Please try again")
-            return false;
-    }
-        person.personName = name
-    person.age = age;
-    console.log(person)
+// function makePerson(name, age){
+//     let person = {
+//         personName: "",
+//         age: 0
+//     }
+//         if(name.length < 1 || age > 150 || age < 1){
+//             console.log("non-valid parameters. Please note that Name must be at least 1 character long. age must be between 1 and 150. Please try again")
+//             return false;
+//     }
+//         person.personName = name
+//     person.age = age;
+//     console.log(person)
+// }
+//
+// makePerson("Wesley", 25)
+
+// Write a function called removeVowels.
+//     Takes a parameter called originalString.
+//     Returns a string that is based on the originalString but with all of the vowels removed.
+//     Do not modify originalString.
+//     Provide a main or equivalent where you can test your function and output the result.
+// ExamplesremoveVowels("aeiou") -> ""
+// removeVowels("happy dog") -> "hppy dg"
+// removeVowels("") -> ""
+
+
+let removeVowels = function (originalString) {
+    let theString = originalString
+    let array = theString.split("")
+    console.log(array)
+    array.forEach(letter => {
+        if letter = ""
+    })
+    return theString;
 }
 
-makePerson("Wesley", 25)
+console.log(removeVowels("lol"))
+
